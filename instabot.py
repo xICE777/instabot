@@ -16,11 +16,11 @@ print("        \/    \/                           ")
 print("""""")
 print("Indirme islemi gerceklesiyor")
 try:
-    os.system("pip install selenium")
+    os.system(command="pip install selenium")
     time.sleep(2)
-    os.system("pip install random")
+    os.system(command="pip install random")
     time.sleep(2)
-    os.system("pip install time")
+    os.system(command="pip install time")
 except:
     print("Indirme gerceklestirilemedi.\nCikis yapiliyor.")
     break
@@ -28,7 +28,6 @@ a = str(random.randint(70,100))
 b = str(random.randint(40,70))
 c = str(random.randint(0,40))
 adsoyad = "Selim"+"Yilmaz{0}{1}{2}".format(a,b,c)
-
 mail = input("Mail Adresi veya Telefon Numarası: ")
 username = input("Kullanıcı adı: ")
 parola = "ICE777v01"
