@@ -1,9 +1,12 @@
-from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.common.action_chains import keys_to_typing
-import random
-import time
-import os
+try:
+    from selenium import webdriver
+    from selenium.webdriver.common.keys import Keys
+    from selenium.webdriver.common.action_chains import keys_to_typing
+    import random
+    import time
+    import os
+except:
+    print(" Library Not Found !")
 print(".__           ___________________________  ")
 print("|__| ____  ___\______  \______  \______  \ ")
 print("|  |/ ___\/ __ \  /    /   /    /   /    / ")
@@ -12,12 +15,15 @@ print("|__|\___  >___  >____/   /____/   /____/   ")
 print("        \/    \/                           ")
 print("""""")
 print("Indirme islemi gerceklesiyor")
-os.system("pip install selenium")
-time.sleep(2)
-os.system("pip install random")
-time.sleep(2)
-os.system("pip install time")
-
+try:
+    os.system("pip install selenium")
+    time.sleep(2)
+    os.system("pip install random")
+    time.sleep(2)
+    os.system("pip install time")
+except:
+    print("Indirme gerceklestirilemedi.\nCikis yapiliyor.")
+    break
 a = str(random.randint(70,100))
 b = str(random.randint(40,70))
 c = str(random.randint(0,40))
